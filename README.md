@@ -5,9 +5,8 @@ ubuntu run ftp server
 
 #運行docker時，設定21和9999port
 #用命令構建和運行：
-#docker build -t vsftpd .
-#docker run -d -p 21:21 -p 9999:9999 -v /etc/passwd:/etc/passwd:ro -v /etc/shadow:/etc/shadow:ro -v /etc/group:/etc/group:ro -v /home:/home vsftpd
-=====================
+#docker build -t kazamimamoru/ftp .
+#docker run -d -p 21:21 -p 9999:9999 -v /etc/passwd:/etc/passwd:ro -v /etc/shadow:/etc/shadow:ro -v /etc/group:/etc/group:ro -v /home:/home kazamimamoru/ftp
 
 FROM ubuntu:16.04
 RUN apt-get update
